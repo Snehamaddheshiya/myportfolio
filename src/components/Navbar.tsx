@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Github, Linkedin, Menu, Download } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -40,6 +41,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center space-x-6">
+          <ThemeToggle />
           <a target="_blank" className="text-secondary hover:text-accent transition-colors" href="https://github.com/snehamaddheshiya">
             <Github size={18} />
           </a>

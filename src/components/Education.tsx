@@ -73,34 +73,9 @@ export default function Education() {
           </div>
           
           <div className="flex-1 relative hidden lg:block h-[600px]">
-            {/* Window Mockup for Code snippet */}
-            <div className="absolute top-10 right-10 w-96 bg-[#0c0c0c] border border-border rounded-lg overflow-hidden shadow-2xl z-20">
-              <div className="flex items-center space-x-2 px-4 py-3 border-b border-border bg-[#111]">
-                <div className="w-3 h-3 rounded-full bg-red-500/80" />
-                <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-                <div className="w-3 h-3 rounded-full bg-green-500/80" />
-                <span className="ml-4 text-xs font-mono text-secondary">traverseTree.java</span>
-                <div className="ml-auto text-xs font-mono text-accent animate-pulse">Running...</div>
-              </div>
-              <div className="p-6 font-mono text-sm leading-[1.7] text-zinc-300 min-h-[250px]">
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                  viewport={{ once: true }}
-                >
-                  <span className="text-[#c678dd]">public void </span><span className="text-[#61afef]">dfs</span><span>(Node node) {'{'}</span><br/>
-                  <span className="text-[#c678dd]">  if</span><span> (node == null) </span><span className="text-[#c678dd]">return</span><span>;</span><br/>
-                  <span className="text-[#7f848e] italic">  {/* Process current node */}</span><br/>
-                  <span>  </span><span className="text-[#61afef]">process</span><span>(node.val);</span><br/>
-                  <span>  </span><span className="text-[#61afef]">dfs</span><span>(node.left);</span><br/>
-                  <span>  </span><span className="text-[#61afef]">dfs</span><span>(node.right);</span><br/>
-                  <span>{'}'}</span>
-                </motion.div>
-              </div>
-            </div>
 
-            <div className="absolute bottom-10 left-0 w-64 bg-card/40 backdrop-blur-xl border border-border rounded-xl p-6 shadow-xl z-30">
+
+            <div className="absolute bottom-10 left-0 w-64 bg-card shadow-lg border border-border rounded-xl p-6 z-30 transition-colors duration-300">
               <h4 className="font-mono text-xs text-accent mb-4 tracking-wider uppercase">Focus Areas</h4>
               <ul className="space-y-3 text-sm font-medium">
                 <li className="flex justify-between items-center group cursor-default">

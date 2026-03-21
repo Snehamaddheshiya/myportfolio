@@ -5,7 +5,7 @@ import { Mail, Github, Linkedin, Smartphone, Sparkles, Send } from "lucide-react
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative w-full py-32 bg-[#050505] overflow-hidden flex flex-col items-center border-t border-white/5">
+    <section id="contact" className="relative w-full py-32 bg-background transition-colors duration-300 overflow-hidden flex flex-col items-center border-t border-border">
       <div className="absolute inset-0 z-0 opacity-[0.03] transition-opacity duration-1000" style={{ backgroundImage: "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)", backgroundSize: "4rem 4rem" }} />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/20 rounded-full blur-[120px] mix-blend-screen pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none" />
@@ -24,9 +24,9 @@ export default function Contact() {
               <span>Available for opportunities</span>
             </div>
             
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 text-white leading-[1.1]">
+            <h2 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 text-primary leading-[1.1]">
               Let&apos;s build <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-400 to-zinc-600 block mt-2 pb-2">something.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent block mt-2 pb-2">something.</span>
             </h2>
             
             <p className="text-zinc-400 text-lg md:text-xl mb-12 max-w-lg font-light leading-relaxed">
@@ -77,7 +77,7 @@ export default function Contact() {
             className="relative rounded-[32px] p-[1px] bg-gradient-to-b from-white/20 via-white/5 to-transparent overflow-hidden group/form"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-accent/20 via-transparent to-blue-500/20 opacity-0 group-hover/form:opacity-100 transition-opacity duration-700 pointer-events-none" />
-            <form className="relative bg-[#0a0a0a]/90 backdrop-blur-xl p-8 md:p-10 rounded-[31px] space-y-6 flex flex-col z-10 shadow-2xl">
+            <form className="relative bg-card/90 backdrop-blur-xl p-8 md:p-10 rounded-[31px] space-y-6 flex flex-col z-10 shadow-2xl">
               <div className="space-y-6">
                 <div className="relative group">
                   <input type="text" id="name" required className="w-full bg-white/[0.03] border border-white/10 rounded-2xl px-6 py-5 outline-none focus:border-accent focus:bg-white/[0.08] transition-all duration-300 text-white peer pt-7" />

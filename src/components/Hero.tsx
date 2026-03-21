@@ -5,7 +5,7 @@ import { Download, ChevronDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden">
+    <section className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden bg-background transition-colors duration-300">
       {/* Background Starfield Mock (could be canvas, using a simplified CSS approach here for performance) */}
       <div className="absolute inset-0 z-0 opacity-30">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-accent-dark)_0%,_transparent_50%)] blur-[120px] opacity-20" />
@@ -19,7 +19,7 @@ export default function Hero() {
           className="overflow-hidden"
         >
           <h2 className="text-secondary font-mono tracking-widest text-sm md:text-base uppercase mb-4 pl-1">
-            Computer Science Engineering Student
+            Data Scientist
           </h2>
         </motion.div>
 

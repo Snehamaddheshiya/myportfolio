@@ -43,7 +43,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="relative w-full min-h-screen py-32 bg-[#030303]">
+    <section id="projects" className="relative w-full min-h-screen py-32 bg-background transition-colors duration-300">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

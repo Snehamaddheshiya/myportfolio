@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import BackgroundParticles from "@/components/BackgroundParticles";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -13,9 +14,9 @@ const jbMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sneha Maddheshiya | Computer Science Engineer",
+  title: "Sneha Maddheshiya | Data Scientist",
   description:
-    "Portfolio of Sneha Maddheshiya, showcasing projects in Java, Python, Web Development, and achievements.",
+    "Portfolio of Sneha Maddheshiya, showcasing projects in Data Science, Machine Learning, Python, and Analytics.",
 };
 
 export default function RootLayout({
@@ -24,10 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${jbMono.variable} antialiased min-h-screen flex flex-col font-sans`}
+        className={`${inter.variable} ${jbMono.variable} antialiased min-h-screen flex flex-col font-sans relative`}
       >
+        <BackgroundParticles />
         <div className="fixed top-0 left-0 bg-accent rounded-full pointer-events-none z-[10000] hidden md:block w-1 h-1" />
         {children}
       </body>
