@@ -92,13 +92,14 @@ export default function Certifications() {
     {
       title: "Legacy Responsive Web Design V8",
       provider: "freeCodeCamp",
-      date: "Jul '24",
-      type: "Course Certificate",
+      date: "Nov '23",
+      type: "Developer Certification",
       icon: CodeXml,
       color: "from-orange-500 to-yellow-400",
       accent: "text-orange-400",
       bgBlur: "bg-orange-500/20",
-      url: "https://www.freecodecamp.org/certification/snehamaddheshiya/responsive-web-design"
+      url: "https://www.freecodecamp.org/certification/snehamaddheshiya/responsive-web-design",
+      image: "/certificates/freecodecamp.png"
     },
     {
       title: "CodeQuest: DSA Summer Bootcamp From Basics to Brilliance",

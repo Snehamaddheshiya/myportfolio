@@ -49,7 +49,7 @@ export default function Navbar() {
             <Linkedin size={18} />
           </a>
           
-          <a href="/resume.png" download className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white text-white hover:text-black border border-white/20 rounded-full text-xs font-medium transition-all">
+          <a href="/MYCV.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white text-white hover:text-black border border-white/20 rounded-full text-xs font-medium transition-all">
             <Download size={14} /> Resume
           </a>
         </div>

@@ -60,8 +60,9 @@ export default function Hero() {
           </a>
 
           <a
-            href="/resume.png"
-            download
+            href="/MYCV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-medium text-primary border border-white/10 bg-white/5 rounded-full overflow-hidden transition-all hover:bg-white/10 active:scale-95"
           >
             <Download size={16} className="text-accent" />
